@@ -1,4 +1,4 @@
-# 腾讯云服务器抢购脚本
+# TencentCloudFlashSaleScript / 腾讯云服务器抢购脚本
 
 ## 本次采用的方案
 
