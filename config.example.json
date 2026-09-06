@@ -1,0 +1,4 @@
+{
+  "csrf_token": "在这里填写登录后 check_goods 请求中的 x-csrf-token",
+  "activity_url": "https://cloud.tencent.com/act/pro/featured-202607?fromSource=gwzcw.11914902.11914902.11914902&utm_medium=cpc&utm_id=gwzcw.11914902.11914902.11914902&gad_source=1&gad_campaignid=1480177331&gbraid=0AAAAADDDx-rm1Uu3nfP4-7MwQ9R7lPkOL&gclid=Cj0KCQjw--7UBhCpARIsAGJBptiLarwO5_Xu1C_pjWIsMEwGyWgvUb-LFyYzA37Xif4EfLcbHUhPXqEaAoQGEALw_wcB"
+}

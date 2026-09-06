@@ -1,0 +1,8 @@
+config.json
+cookies.json
+*.local
+.env
+secrets/
+credentials.json
+__pycache__/
+.venv/
