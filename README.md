@@ -50,7 +50,9 @@ python -m playwright install chromium
 
 ## 活动配置
 
-默认活动地址写在 `snap_up_server.py` 中。需要更换活动地址时，复制示例配置：
+活动页面可能随活动周期刷新，代码中的 `ACTIVITY_URL` 只是默认地址。每次使用前，建议手动打开腾讯云活动页面，确认当前活动路径，并从浏览器地址栏复制完整 URL（包括 query 参数）。然后通过配置文件或当前 PowerShell 会话中的环境变量指定，不要继续使用已经失效的旧地址。
+
+使用配置文件：
 
 ```powershell
 Copy-Item .\config.example.json .\config.json
@@ -66,6 +68,15 @@ notepad .\config.json
 ```
 
 CSRF 会在本次登录后自动更新，不需要手动填写。当前活动的 `activity_id`、`goods[].act_id`、商品类型和地域配置位于 `snap_up_server.py`。
+
+也可以只在当前 PowerShell 会话中临时指定活动地址：
+
+```powershell
+$env:TENCENT_ACTIVITY_URL = "https://cloud.tencent.com/act/pro/当前活动路径?保留完整query参数"
+.\.venv\Scripts\python.exe snap_up_server.py
+```
+
+如果没有配置文件或环境变量，程序才会使用 `snap_up_server.py` 中写好的默认地址。
 
 ## 抢购参数
 
