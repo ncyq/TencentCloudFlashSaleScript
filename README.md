@@ -1,5 +1,10 @@
 # TencentCloudFlashSaleScript
 
+> [!WARNING]
+> **重要声明：本项目仅供个人学习、研究和技术交流。** 作者不提供或支持商业代抢、批量运营、账号交易、云资源倒卖等用途。严禁将本项目用于任何违反中华人民共和国法律法规、腾讯云服务协议或具体活动规则的行为。使用者应自行核实并承担由运行本项目产生的账号限制、订单取消、资源收回、财产损失及其他风险。
+>
+> 本项目是非官方项目，与腾讯云计算（北京）有限责任公司及其关联方不存在隶属、合作、赞助、认可或授权关系。“腾讯云”等名称仅用于说明本项目所适配的服务对象。
+
 腾讯云轻量应用服务器活动抢购脚本。程序使用 Playwright 完成登录态获取，使用 Python `requests` 发起抢购请求。
 
 ## 功能
@@ -132,6 +137,22 @@ REGION_IDS = [1, 4, 8]
 ```powershell
 .\.venv\Scripts\python.exe -B -m unittest -v test_snap_up_server test_auth
 ```
+
+## 参考与致谢
+
+本项目在设计和实现过程中参考了以下公开项目的思路和文档：
+
+- [Ezio1Alex/tencent-server-snap](https://github.com/Ezio1Alex/tencent-server-snap)
+- [djs-91/tencent-server-seckill](https://github.com/djs-91/tencent-server-seckill)
+- [avelli/tencentyun-qianggou](https://github.com/avelli/tencentyun-qianggou)
+- [ghajg/tencentyun-snake-up](https://github.com/ghajg/tencentyun-snake-up)
+- [kkkksad/tenxunyun](https://github.com/kkkksad/tenxunyun)
+
+感谢上述项目作者的公开分享。各参考项目及其代码的版权与许可归相应作者所有；本项目的 MIT 许可证仅适用于本仓库中由本项目作者享有版权并有权再许可的内容。
+
+## 许可证
+
+本项目中由本项目作者享有版权的内容采用 [MIT License](LICENSE) 授权。MIT 许可证允许使用、复制、修改、合并、发布和分发代码，包括商业使用，但不代表腾讯云授权使用其服务、接口、商标或活动资源；任何实际使用仍须遵守适用法律及腾讯云相关协议和规则。
 
 ## 安全提示
 
